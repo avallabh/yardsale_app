@@ -13,3 +13,14 @@
 
  *= require_tree .
  */
+
+
+#map-canvas {
+  height: 400px;
+  width: 400px;
+}
+
+.map img {
+  max-width: none;
+  height: auto;
+}

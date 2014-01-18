@@ -12,8 +12,8 @@ describe Item do
   it { should have_valid(:price).when('300000') }
   it { should_not have_valid(:price).when(*blanks) }
 
-  it { should have_valid(:sold).when(true) }
-  it { should_not have_valid(:sold).when(nil, '') }
+  # it { should have_valid(:sold).when(true) }
+  # it { should_not have_valid(:sold).when(nil, '') }
 
   it { should have_valid(:user_id).when(1) }
   it { should_not have_valid(:user_id).when(*blanks) }
