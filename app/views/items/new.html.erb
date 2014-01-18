@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-6 large-centered columns">
+    <h1>New Item Form</h1>
+    <%= simple_form_for [@location, @item] do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <%= f.input :price %>
+      <%= f.hidden_field :latitude, readonly: true %>
+      <%= f.hidden_field :latitude, readonly: true %>
+
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
+

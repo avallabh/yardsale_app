@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-6 large-centered columns">
+    <h1>New City</h1>
+
+    <%= simple_form_for @location do |f| %>
+      <%= f.input :city %>
+      <%= f.input :state %>
+      <%= f.input :zip_code %>
+
+      <%= f.submit %>
+
+    <% end %>
+  </div>
+</div>
+
