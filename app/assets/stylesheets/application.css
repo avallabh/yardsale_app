@@ -24,3 +24,10 @@
   max-width: none;
   height: auto;
 }
+
+/* Ask for help with info sizing and google apis */
+.gm-style-iw {
+  min-width:100px;
+  min-height:30px;
+  overflow: hidden;
+}

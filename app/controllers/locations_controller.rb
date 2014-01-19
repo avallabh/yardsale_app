@@ -11,6 +11,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @items = Item.find_all_by_id(1)
   end
 
   def create
