@@ -12,7 +12,7 @@ class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
     @item = Item.new
-    @items = Item.find_all_by_id(1)
+    @items = Item.where(location_id: 1)
   end
 
   def create

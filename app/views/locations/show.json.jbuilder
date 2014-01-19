@@ -1,1 +1,1 @@
-json.array!(@items, :id, :name, :latitude, :longitude, :location_id)
+json.array! @items, :id, :name, :latitude, :longitude, :location_id

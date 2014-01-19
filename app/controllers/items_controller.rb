@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
     @item.user_id = current_user.id
     if @item.save
       flash[:notice] = "Item Added"
-      redirect_to @item
+      redirect_to @location
     else
       flash[:alert] = "Item Not Added"
       render 'new'
