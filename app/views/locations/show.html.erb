@@ -1,11 +1,11 @@
-<div id="map-canvas" class="map">
-
-</div>
-
 <div class="row">
+  <div class="large-3 columns"></div>
   <div class="large-6 large-centered columns">
-    <h1>The Show Page: <%= @location.city %></h1>
-
+   <h1 class="text-center"><%= @location.city %></h1>
+    <div id="map-canvas" class="map">
+    </div>
   </div>
+  <div class="large-3 columns"></div>
 </div>
 
+<%= render 'shared/new_item' %>

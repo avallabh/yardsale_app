@@ -1,0 +1,10 @@
+<%= simple_form_for [@location, @item] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :price %>
+  <%= f.hidden_field :latitude, readonly: true %>
+  <%= f.hidden_field :latitude, readonly: true %>
+
+  <%= f.submit %>
+<% end %>
+
